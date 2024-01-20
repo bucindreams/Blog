@@ -1,0 +1,51 @@
+.button {
+  display:inline-flex;
+  align-items:center;
+  margin:10px 0;
+  padding:6px 15px;
+  outline:0;
+  border-radius:6px;
+  line-height:16px; 
+  color: black; 
+  border: 2px solid #00C2FF;
+  background:transparent;
+  font-size:16px;
+  font-family:Garamond, serif;
+  white-space:nowrap;
+  overflow:hidden;
+  list-style-type: none;
+  text-decoration: none;
+  max-width:320px
+}
+
+.button1 {       /* Merah */
+  border: 2px solid #ff0000;
+}
+
+.button2 {       /* Kuning */
+  border: 2px solid #ffff00;
+}
+
+.button3 {       /* Hijau */
+  border: 2px solid #00ff00;
+}
+
+.button4 {       /* Biru */
+  border: 2px solid #00ffff;
+}
+
+.button5 {       /* Biru Tua */
+  border: 2px solid #0000FF;
+}
+
+.button6 {       /* Purple */
+  border: 2px solid #ff00ff;
+}
+
+.button7 {       /* Hitam */
+  border: 2px solid #000000;
+}
+
+.button8 {       /* White */
+  border: 2px solid #00C2FF;
+}

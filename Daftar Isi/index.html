@@ -1,0 +1,149 @@
+<!-- 
+
+
+RESULT; 
+https://www.contohblog.com/2021/08/cara-membuat-daftar-isi-di-postingan.html
+
+RECODE BY;
+ARDA GANZ
+Ig; @ArdaSaha10
+
+
+Seputar Tentang Atribut Input
+https://www.saidalfaruq.net/html/tag-input-pada-html-n6x1hx2x
+https://itkoding.com/tag-atribut-elemen-kode-html/
+
+ -->
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/index.css">
+  
+  <title>html</title>
+</head>
+<style>
+	:root{ 
+--linkB: #ffc700; 
+}
+
+/*List Daftar isi (Table Off Content)*/
+.toc-auto {
+display: table;
+position: relative;
+border-radius: 3px;
+background-color: #f6f9fc;
+padding: 1rem 1rem.85rem;
+margin:1.5rem 0;
+}
+.toc-auto a {
+color: var(--linkB);
+transition: .3s ease-in;
+text-decoration:none;
+}
+.toc-auto a:hover, .toc-auto .current {
+text-decoration: underline !important;
+color: var(--linkB);
+}
+.toc-auto input[type="checkbox"] {
+display: none;
+}
+.toc-title {
+font-weight: 700 !important;
+margin-top: 5px;
+}
+.toc-title:after {
+content: '-';
+color: #ffffff;
+background-color: var(--linkB);
+border-radius: 3px;
+clear: both;
+float: right;
+margin-left: 1rem;
+cursor: pointer;
+font-weight: 400 !important;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 25px;
+height: 25px;
+transition: .3s ease-in;
+}
+.toc-title:after:hover {
+background-color: #028271;
+color: #fff;
+}
+.toc-auto .toc {
+max-height: 100%;
+max-width: 500px;
+opacity: 1;
+overflow: hidden;
+transition: max-height .1s ease,max-width 0s ease,margin-top .3s linear,opacity .3s linear,visibility .3s linear;
+visibility: visible;
+}
+.toc-auto ul li,ol li {
+margin-bottom: 0 !important;
+}
+#toc-sh:checked~.toc-title:after {
+content: '+';
+}
+#toc-sh:checked ~ .toc {
+margin-top: 0;
+max-height: 0;
+max-width: 0;
+opacity: 0;
+transition: max-height 0s ease,max-width 0s ease,margin-top .3s linear,opacity .3s linear,visibility .3s linear;
+visibility: hidden;
+}
+
+</style>
+<body>
+
+
+
+
+
+
+
+<div class="toc-auto" data-tracking-container="true">
+<input id="toc-sh" type="checkbox">
+<label class="toc-title" for="toc-sh">Daftar Isi</label>
+<div class="toc" id="toc">
+<ul>
+<li><b>Livery Drag</b><ul>
+<li><a href="#Tag">S15</a></li>
+<li><a href="#Tag">AE86</a></li>
+<li><a href="#Tag">ALTEZZA</a></li>
+<li><a href="#Tag">JZX100CHASER</a></li>
+<li><a href="#Tag">Terimakasih Telah Berkunjung</a></li>
+</ul></li>
+</ul>
+</div></div>
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

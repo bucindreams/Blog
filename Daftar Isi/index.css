@@ -1,0 +1,73 @@
+/*List Daftar isi (Table Off Content)*/
+.toc-auto {
+display: table;
+position: relative;
+border-radius: 3px;
+background-color: #f6f9fc;
+padding: 1rem 1rem.85rem;
+margin:1.5rem 0;
+}
+.toc-auto a {
+color: var(--linkB);
+transition: .3s ease-in;
+text-decoration:none;
+}
+.toc-auto a:hover, .toc-auto .current {
+text-decoration: underline !important;
+color: var(--linkB);
+}
+.toc-auto input[type="checkbox"] {
+display: none;
+}
+.toc-title {
+font-weight: 700 !important;
+margin-top: 5px;
+}
+.toc-title:after {
+content: '-';
+color: #ffffff;
+background-color: var(--linkB);
+border-radius: 3px;
+clear: both;
+float: right;
+margin-left: 1rem;
+cursor: pointer;
+font-weight: 400 !important;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 25px;
+height: 25px;
+transition: .3s ease-in;
+}
+.toc-title:after:hover {
+background-color: #028271;
+color: #fff;
+}
+.toc-auto .toc {
+max-height: 100%;
+max-width: 500px;
+opacity: 1;
+overflow: hidden;
+transition: max-height .1s ease,max-width 0s ease,margin-top .3s linear,opacity .3s linear,visibility .3s linear;
+visibility: visible;
+}
+.toc-auto ul li,ol li {
+margin-bottom: 0 !important;
+}
+#toc-sh:checked~.toc-title:after {
+content: '+';
+}
+#toc-sh:checked ~ .toc {
+margin-top: 0;
+max-height: 0;
+max-width: 0;
+opacity: 0;
+transition: max-height 0s ease,max-width 0s ease,margin-top .3s linear,opacity .3s linear,visibility .3s linear;
+visibility: hidden;
+}
+
+.drK .toc-auto { background-color: #333334;}
+.drK .toc-auto a { color: var(--darkU); }
+.drK .toc-auto a:hover, .toc-auto .current { color: var(--darkU); }
+.drK .toc-title:after { background-color: var(--darkU); }
